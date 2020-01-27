@@ -1,2 +1,3 @@
-FROM https://github.com/hshar/webapp
-ADD . /var/www/html
+FROM ubuntu
+RUN appt-get update
+CMD ["echo". "Hello World"]
