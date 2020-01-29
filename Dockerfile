@@ -1,3 +1,6 @@
 FROM ubuntu
 RUN appt-get update
-CMD ["echo". "Hello World"]
+RUN apt-get -y install apache2
+ADD . /var/www.html
+ENTRYPOINT apachectl
+ENV name Wecome Raj
